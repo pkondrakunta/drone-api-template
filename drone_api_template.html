@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Template</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body style="font-family: sans-serif; text-align: center">
+    <h2>App Template</h2>
+
+    <h4>Drone details & Telemetry</h4>
+    <button onclick="get_all_drones()">Get all drones</button>
+    <button onclick="get_battery_percentage()">Get drone & RC battery percentage</button>
+    <button onclick="get_global_position()">Get global position</button>
+    <button onclick="get_attitude_euler()">Get attitude euler data</button><br /><br />
+
+    <h4>Video streaming & sharing</h4>
+
+    <button onclick="create_video_link()">Create video link</button>
+    <button onclick="update_video_link()">Update video link</button>
+    <button onclick="delete_video_link()">Delete video link</button><br /><br />
+
+    <h4>Waypoint missions</h4>
+
+    <button onclick="set_waypoints()">Set waypoints</button>
+    <button onclick="get_waypoints()">Get waypoints</button>
+    <button onclick="execute_waypoints()">Execute waypoints</button>
+    <button onclick="pause_waypoints()">Pause waypoints</button>
+    <button onclick="clear_waypoints()">Clear waypoints</button><br />
+
+
+    <script src="./app_template.js"></script>
+</body>
+
+</html>
